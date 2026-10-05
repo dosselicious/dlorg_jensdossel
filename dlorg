@@ -1,3 +1,34 @@
 #!/usr/bin/env bash
 
+declare -A filtyper
 
+filtyper[jpg]="image"
+filtyper[jpeg]="image"
+filtyper[png]="image"
+filtyper[gif]="image"
+filtyper[heic]="image"
+
+filtyper[pdf]="pdf"
+
+filtyper[doc]="word"
+filtyper[docx]="word"
+
+filtyper[xls]="tabell"
+filtyper[xlsx]="tabell"
+filtyper[csv]="tabell"
+
+filtyper[mp3]="musik"
+filtyper[wav]="musik"
+
+filtyper[logicx]="musikprojekt"
+
+filtyper[md]="text"
+filtyper[txt]="text"
+filtyper[rtf]="text"
+
+filtyper[mp4]="video"
+filtyper[mov]="video"
+
+
+echo "${filtyper[*]}"
+echo "${!filtyper[*]}"
