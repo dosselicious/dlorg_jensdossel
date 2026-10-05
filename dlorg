@@ -40,6 +40,11 @@ id_n_sort(){
 	local extension="${fil##*.}"
 	extension="${extension,,}"
 	local kategori="${filtyper[$extension]:-other}"
-	mkdir -p "$kategori"
-	mv "$fil" "$kategori"
+	mkdir -p "$HOME/Hämtningar/$kategori"
+	mv "$fil" "$HOME/Hämtningar/$kategori"
 }
+
+inotifywait -m -e close_write -e moved_to --format '%w%f' ~/Hämtningar | 
+	while read fil
+	do id_n_sort "$fil"
+	done
