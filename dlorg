@@ -35,10 +35,11 @@ filtyper[mov]="video"
 
 
 
-get_cat(){
+id_n_sort(){
 	local fil="$1"
 	local extension="${fil##*.}"
 	extension="${extension,,}"
 	local kategori="${filtyper[$extension]:-other}"
-	echo "$kategori"
+	mkdir -p "$kategori"
+	mv "$fil" "$kategori"
 }
