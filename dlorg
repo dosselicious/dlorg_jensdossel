@@ -30,5 +30,15 @@ filtyper[mp4]="video"
 filtyper[mov]="video"
 
 
-echo "${filtyper[*]}"
-echo "${!filtyper[*]}"
+# echo "${filtyper[*]}"
+# echo "${!filtyper[*]}"
+
+
+
+get_cat(){
+	local fil="$1"
+	local extension="${fil##*.}"
+	extension="${extension,,}"
+	local kategori="${filtyper[$extension]:-other}"
+	echo "$kategori"
+}
