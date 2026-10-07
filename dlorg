@@ -12,10 +12,17 @@ filtyper[pdf]="pdf"
 
 filtyper[doc]="word"
 filtyper[docx]="word"
+filtyper[pages]="word"
+
 
 filtyper[xls]="tabell"
 filtyper[xlsx]="tabell"
 filtyper[csv]="tabell"
+filtyper[numbers]="tabell"
+
+filtyper[ppt]="presentation"
+filtyper[pptx]="presentation"
+filtyper[key]="presentation"
 
 filtyper[mp3]="musik"
 filtyper[wav]="musik"
