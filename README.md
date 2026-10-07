@@ -7,7 +7,7 @@ Scriptet identifierar filer som "landar", döps om eller skapas i Hämtningar ba
 ## Filtyper och kategorier
 
 | Filändelser                   | Kategori |
-| 
+| ----------------------------- | -------- || 
 | jpeg, jpg, gif, heic, png     | image |
 | txt, rtf, md                  | text |
 | pdf                           | pdf |
