@@ -29,6 +29,7 @@ filtyper[rtf]="text"
 filtyper[mp4]="video"
 filtyper[mov]="video"
 
+filtyper[zip]="paket"
 
 # echo "${filtyper[*]}"
 # echo "${!filtyper[*]}"
