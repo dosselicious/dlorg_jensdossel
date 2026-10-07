@@ -29,6 +29,6 @@ Funktionen skapar målkatalogen om den saknas genom `mkdir -p` och döper den en
 Scriptet ligger i repot `~/dlorg_jensdossel`, har en symbolisk länk i `~/.local/bin/dlorg` och körs via systemd-filen `~/.config/systemd/user/dlorg.service`.
 
 Bevakningen av `~/Hämtningar` sköts av `inotifywait`.
-Identifiering och sortering sköts av Bash-funktionen `id_n_sort`
+Identifiering och sortering sköts av Bash-funktionen `id_n_sort`.
 
 ![Systemd service](Image.png)
