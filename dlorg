@@ -10,9 +10,9 @@ filtyper[heic]="image"
 
 filtyper[pdf]="pdf"
 
-filtyper[doc]="word"
-filtyper[docx]="word"
-filtyper[pages]="word"
+filtyper[doc]="docs"
+filtyper[docx]="docs"
+filtyper[pages]="docs"
 
 
 filtyper[xls]="tabell"
